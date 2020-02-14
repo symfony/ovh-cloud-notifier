@@ -102,6 +102,6 @@ final class OvhCloudTransport extends AbstractTransport
 
         $serverTimestamp = (int) (string) $response->getContent();
 
-        return $serverTimestamp - (int) time();
+        return $serverTimestamp - time();
     }
 }
